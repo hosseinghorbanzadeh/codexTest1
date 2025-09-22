@@ -1,0 +1,21 @@
+/* RTL تنظیمات پایه */
+html, body {
+    direction: rtl;
+}
+
+#content-main table { text-align: right; }
+
+.asset-indent {
+    display: inline-block;
+    font-weight: 500;
+}
+
+.asset-level-1 { padding-inline-start: 0; }
+.asset-level-2 { padding-inline-start: 1.5rem; }
+.asset-level-3 { padding-inline-start: 3rem; }
+.asset-level-4 { padding-inline-start: 4.5rem; }
+.asset-level-5 { padding-inline-start: 6rem; }
+.asset-level-6 { padding-inline-start: 7.5rem; }
+.asset-level-7 { padding-inline-start: 9rem; }
+.asset-level-8 { padding-inline-start: 10.5rem; }
+.asset-level-9 { padding-inline-start: 12rem; }
