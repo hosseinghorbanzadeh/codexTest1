@@ -1,0 +1,132 @@
+[
+  {
+    "model": "iso14242.asset",
+    "pk": "11111111-1111-1111-1111-111111111111",
+    "fields": {
+      "name": "تأسیسات فرآیندی",
+      "code": "PRC",
+      "level": 1,
+      "parent": null,
+      "path": "0001",
+      "standard_ref": "24-PRC",
+      "meta": {"نوع": "ریشه"}
+    }
+  },
+  {
+    "model": "iso14242.asset",
+    "pk": "22222222-2222-2222-2222-222222222222",
+    "fields": {
+      "name": "واحد پالایش",
+      "code": "U-A",
+      "level": 2,
+      "parent": "11111111-1111-1111-1111-111111111111",
+      "path": "0001/0001",
+      "standard_ref": "24-U-A",
+      "meta": {"نوع": "واحد"}
+    }
+  },
+  {
+    "model": "iso14242.asset",
+    "pk": "33333333-3333-3333-3333-333333333333",
+    "fields": {
+      "name": "قطار پمپ A",
+      "code": "TRAIN-A",
+      "level": 3,
+      "parent": "22222222-2222-2222-2222-222222222222",
+      "path": "0001/0001/0001",
+      "standard_ref": "24-TR-A",
+      "meta": {"critical": true}
+    }
+  },
+  {
+    "model": "iso14242.asset",
+    "pk": "44444444-4444-4444-4444-444444444444",
+    "fields": {
+      "name": "پمپ تغذیه A-101",
+      "code": "P-101A",
+      "level": 4,
+      "parent": "33333333-3333-3333-3333-333333333333",
+      "path": "0001/0001/0001/0001",
+      "standard_ref": "24-P-101A",
+      "meta": {"tag": "P-101A"}
+    }
+  },
+  {
+    "model": "iso14242.asset",
+    "pk": "55555555-5555-5555-5555-555555555555",
+    "fields": {
+      "name": "قطار کمپرسور",
+      "code": "TRAIN-C",
+      "level": 3,
+      "parent": "22222222-2222-2222-2222-222222222222",
+      "path": "0001/0001/0002",
+      "standard_ref": "24-TR-C",
+      "meta": null
+    }
+  },
+  {
+    "model": "iso14242.asset",
+    "pk": "66666666-6666-6666-6666-666666666666",
+    "fields": {
+      "name": "واحد خدمات جانبی",
+      "code": "UTIL",
+      "level": 2,
+      "parent": "11111111-1111-1111-1111-111111111111",
+      "path": "0001/0002",
+      "standard_ref": "24-UTL",
+      "meta": {"notes": "شامل بخار و آب"}
+    }
+  },
+  {
+    "model": "iso14242.asset",
+    "pk": "77777777-7777-7777-7777-777777777777",
+    "fields": {
+      "name": "تأسیسات برق",
+      "code": "ELEC",
+      "level": 1,
+      "parent": null,
+      "path": "0002",
+      "standard_ref": "24-ELEC",
+      "meta": null
+    }
+  },
+  {
+    "model": "iso14242.asset",
+    "pk": "88888888-8888-8888-8888-888888888888",
+    "fields": {
+      "name": "پست اصلی",
+      "code": "SUBST",
+      "level": 2,
+      "parent": "77777777-7777-7777-7777-777777777777",
+      "path": "0002/0001",
+      "standard_ref": "24-SUB",
+      "meta": null
+    }
+  },
+  {
+    "model": "iso14242.asset",
+    "pk": "99999999-9999-9999-9999-999999999999",
+    "fields": {
+      "name": "تأسیسات آب",
+      "code": "WTR",
+      "level": 1,
+      "parent": null,
+      "path": "0003",
+      "standard_ref": "24-WTR",
+      "meta": {"description": "سیستم آب صنعتی"}
+    }
+  },
+  {
+    "model": "iso14242.asset",
+    "pk": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "fields": {
+      "name": "برج خنک‌کن",
+      "code": "CT-01",
+      "level": 2,
+      "parent": "99999999-9999-9999-9999-999999999999",
+      "path": "0003/0001",
+      "standard_ref": "24-CT-01",
+      "meta": null
+    }
+  }
+]
